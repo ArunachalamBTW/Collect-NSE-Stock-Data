@@ -61,7 +61,7 @@ def getStockInfoAndLog():
 
 def getQuoteRecursively():
     now = datetime.utcnow()
-    if (now.hour > 4 and now.hour < 11) or (now.hour == 4 and now.minute > 44) or True:
+    if (now.hour > 4 and now.hour < 11) or (now.hour == 4 and now.minute > 44):
         getStockInfoAndLog()        
     else:
         print("Not a trading time")
